@@ -43,7 +43,7 @@ class SertificateListSerializer(serializers.ModelSerializer):
         ]
 
 
-class ProductInfoListSerialzier(serializers.ModelField):
+class ProductInfoListSerialzier(serializers.ModelSerializer):
     class Meta:
         model = models.ProductInfo
         fields = [

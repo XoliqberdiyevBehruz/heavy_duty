@@ -30,7 +30,7 @@ class AboutUsAdmin(TranslationAdmin):
     
 
 @admin.register(models.Statistics)
-class StatictsAdmin(admin.ModelAdmin):
+class StatictsAdmin(TranslationAdmin):
     list_display = ['name', 'count']
 
 
