@@ -86,7 +86,9 @@ class ProductTechnicalSpecifications(models.Model):
     name = models.CharField(max_length=200, verbose_name=_('nomi'))
     amount = models.CharField(max_length=200, verbose_name=_('miqdori'))
     type = models.CharField(max_length=21, verbose_name=_('turi'), choices=TYPE)
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='product_tech_specifications')
+    product = models.ForeignKey(
+        Product, on_delete=models.CASCADE, related_name='product_tech_specifications'
+    )
 
     def __str__(self):
         return self.name

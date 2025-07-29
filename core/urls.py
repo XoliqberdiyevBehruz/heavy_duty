@@ -28,7 +28,8 @@ urlpatterns = [
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
 
     # Api V1
-    path('api/v1/', include('apps.common.urls')),
+    path('api/v1/common/', include('apps.common.urls')),
+    path('api/v1/products/', include('apps.products.urls')),
 ]
 
 
