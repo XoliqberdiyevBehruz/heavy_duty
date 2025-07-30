@@ -39,18 +39,3 @@ class ProductCategoryAdmin(TranslationAdmin):
 class ProductAdmin(TranslationAdmin):
     list_display = ['name', 'model', 'category']
     inlines = [ProductMediaInline, ProductFeatureInline, ProductTechnicalSpecificationsInline]
-
-
-@admin.register(models.ProductFeature)
-class ProductFeatureAdmin(TranslationAdmin):
-    list_display = ['name', 'product']
-
-
-@admin.register(models.ProductMedia)
-class ProductMediaAdmin(admin.ModelAdmin):
-    list_display = ['media', 'product']
-
-
-@admin.register(models.ProductTechnicalSpecifications)
-class ProductTechnicalSpecificationAdmin(TranslationAdmin):
-    list_display = ['name', 'amount', 'type']

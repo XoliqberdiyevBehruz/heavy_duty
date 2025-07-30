@@ -24,3 +24,15 @@ class ProductListApiView(generics.GenericAPIView):
         
         serializer = self.serializer_class(products, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+class ProductDetailApiView(generics.RetrieveAPIView):
+    serializer_class = serializers.ProductListSerializer
+    queryset = models.Product.objects.all()
+    lookup_field = 'id'
+
+
+class ProductApiView(generics.RetrieveAPIView):
+    serializer_class = serializers.ProductListSerializer
+    queryset = models.Product.objects.all()
+

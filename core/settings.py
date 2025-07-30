@@ -21,6 +21,7 @@ ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -173,3 +174,42 @@ CORS_ALLOWED_ORIGINS = [
 
 CSRF_TRUSTED_ORIGINS = [
 ]
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Admin Panel",
+    "site_header": "Heavy Duty Admin",
+    "site_brand": "Heavy Duty",
+    # "site_logo": "image.png",  # static papkada joylashgan logoni yo‘li
+    "welcome_sign": "Welcome to Heavy Duty Admin",
+    "copyright": "Heavy Duty Inc",
+    "search_model": ["products.Product", "products.ProductCategory"],
+
+    "topmenu_links": [
+        {"name": "Bosh sahifa", "url": "admin:index"},
+    ],
+
+    "icons": {
+        "products": "fas fa-box",
+        "products.Product": "fas fa-cube",
+        "products.ProductCategory": "fas fa-tags",
+        "products.UsageArea": "fas fa-compass",
+
+        "common.AboutUs": "fa-solid fa-address-card",
+        "common.Settings": "fas fa-cogs",
+        "common.Sertificate": 'fas fa-certificate',
+        "common.Statistics": 'fa-solid fa-chart-line',
+        'common.Banner': 'fas fa-image',
+        'common.ContactUs': 'fas fa-phone',
+        "common.CompanyContactInfo": 'fas fa-building',
+        "common.ProductInfo": "fas fa-file-alt",
+    },
+
+    "hide_apps": [],
+    "hide_models": [],
+    "order_with_respect_to": ["products", "common"],
+
+    "show_sidebar": True,
+    "navigation_expanded": True,
+
+    "language_chooser": False,
+}
