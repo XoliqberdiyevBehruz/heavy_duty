@@ -14,7 +14,7 @@ class Banner(BaseModel):
 
     title = models.CharField(max_length=100, verbose_name=_('sarlovha'))
     description = models.TextField(verbose_name=_('tavsif'))
-    banner = models.ImageField(upload_to='common/banner/')
+    banner = models.FileField(upload_to='common/banner/')
     page = models.CharField(max_length=50, choices=PAGE)
 
     def __str__(self):
