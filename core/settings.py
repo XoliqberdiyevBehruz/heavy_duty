@@ -213,3 +213,6 @@ JAZZMIN_SETTINGS = {
 
     "language_chooser": False,
 }
+
+if not DEBUG:
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
