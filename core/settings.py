@@ -170,10 +170,10 @@ CORS_ALLOWED_ORIGINS = [
     "http://read-only.example.com",
     "https://read-and-write.example.com",
     "http://localhost:3000",
+    "https://heavy-duty-git-main-axrorxonov.vercel.app",
+    "https://heavy-duty-nu.vercel.app",
 ]
-
-CSRF_TRUSTED_ORIGINS = [
-]
+CORS_ALLOW_ALL_ORIGINS = True
 
 JAZZMIN_SETTINGS = {
     "site_title": "Admin Panel",
