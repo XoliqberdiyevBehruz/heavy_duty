@@ -27,7 +27,8 @@ class Banner(BaseModel):
 
 class Settings(BaseModel):
     location_text = models.CharField(verbose_name=_('lokatsiya'), max_length=200)
-    email = models.EmailField(verbose_name=_("elektron po'chta"))
+    first_email = models.EmailField(verbose_name=_("birinchi elektron po'chta"))
+    second_email = models.EmailField(verbose_name=_("ikkinchi elektron po'chta"))
     
     first_phone = models.CharField(
         max_length=13, null=True, blank=True, verbose_name=_('birinchi raqam')

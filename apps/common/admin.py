@@ -12,7 +12,7 @@ class BannerAdmin(TranslationAdmin):
 
 @admin.register(models.Settings)
 class SettingsAdmin(TranslationAdmin):
-    list_display = ['location_text', 'email']
+    list_display = ['location_text', 'first_email']
 
     def has_add_permission(self, request):
         if self.model.objects.count() >= 1:

@@ -15,7 +15,7 @@ class SettingsSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Settings
         fields = [
-            'id', 'location_text', 'email', 'first_phone', 'second_phone',
+            'id', 'location_text', 'first_email', 'second_email', 'first_phone', 'second_phone',
             'facebook_url', 'instagram_url', 'telegram_url', 'youtube_url', 'text'
         ]
 
