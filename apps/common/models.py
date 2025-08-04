@@ -137,20 +137,11 @@ class CompanyContactInfo(BaseModel):
     
 
 class ContactUs(BaseModel):
-    SUBJECT = (
-        ('PRODUCT_INQUIRY', "mahsulot so'rovi"),
-        ('TECHNICAL_SUPPORT', 'texnik yordam'),
-        ('PARTNERSHIP', 'hamkorlik'),
-        ('COMPLAINT', 'shikoyat'),
-        ('OTHER', 'boshqa'),
-    )
     is_contacted = models.BooleanField(default=False, verbose_name=_("aloqaga chiqilganmi"))
     full_name = models.CharField(max_length=100, verbose_name=_("to'liq ism sharif"))
     email = models.EmailField(verbose_name=_('elektron pochta'))
     phone_number = models.CharField(max_length=15, verbose_name=_("telefon raqam"))
-    company_name = models.CharField(max_length=200, verbose_name=_("companiya nomi"))
     message = models.TextField(verbose_name=_('xabar'))
-    subject = models.CharField(max_length=200, choices=SUBJECT)
 
     class Meta:
         verbose_name = _('aloqa uchun xabar')

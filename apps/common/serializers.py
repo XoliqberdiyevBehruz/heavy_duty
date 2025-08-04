@@ -65,6 +65,6 @@ class ContactUsCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.ContactUs
         fields = [
-            'full_name', 'phone_number', 'email', 'company_name', 'subject', 
+            'full_name', 'phone_number', 'email', 
             'message'
         ]

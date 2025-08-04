@@ -60,7 +60,7 @@ class ContactUsAdmin(admin.ModelAdmin):
         'full_name', 'phone_number', 'is_contacted'
     ]  
     list_filter = [
-        'is_contacted', 'subject'
+        'is_contacted',
     ]
 
     def has_add_permission(self, request):
