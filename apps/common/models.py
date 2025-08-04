@@ -31,10 +31,10 @@ class Settings(BaseModel):
     second_email = models.EmailField(verbose_name=_("ikkinchi elektron po'chta"))
     
     first_phone = models.CharField(
-        max_length=13, null=True, blank=True, verbose_name=_('birinchi raqam')
+        max_length=20, null=True, blank=True, verbose_name=_('birinchi raqam')
     )
     second_phone = models.CharField(
-        max_length=13, null=True, blank=True, verbose_name=_('ikkinchi raqam')
+        max_length=20, null=True, blank=True, verbose_name=_('ikkinchi raqam')
     )
 
     facebook_url = models.URLField(verbose_name=_('facebook link'))
