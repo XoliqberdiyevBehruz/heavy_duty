@@ -25,3 +25,7 @@ class ProductInfoTranslation(TranslationOptions):
 @register(models.Statistics)
 class StatisticsTranslation(TranslationOptions):
     fields = ['name']
+
+@register(models.CompanyContactInfo)
+class CompanyContactInfoTranslation(TranslationOptions):
+    fields = ['address']

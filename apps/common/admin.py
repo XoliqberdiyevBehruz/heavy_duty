@@ -44,7 +44,7 @@ class ProductInfoAdmin(TranslationAdmin):
     list_display = ['name', 'hs_code']
 
 @admin.register(models.CompanyContactInfo)
-class ConpanyContactInfoAdmin(admin.ModelAdmin):
+class ConpanyContactInfoAdmin(TranslationAdmin):
     list_display = [
         'phone_number_1', 'phone_number_2', 'address',
     ]
