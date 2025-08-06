@@ -10,7 +10,7 @@ class BannerTranslation(TranslationOptions):
 
 @register(models.Settings)
 class SettingsTranslation(TranslationOptions):
-    fields = ['text']
+    fields = ['text', 'location_text']
 
 
 @register(models.AboutUs)
