@@ -138,6 +138,7 @@ AUTH_USER_MODEL = 'accounts.User'
 LANGUAGES = (
     ('uz', 'Uzbek'),
     ('ru', 'Russian'),
+    ('en', 'English')
 )
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'uz'
 
