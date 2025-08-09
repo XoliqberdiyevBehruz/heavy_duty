@@ -170,6 +170,7 @@ CACHEOPS_ENABLED = env.bool("CACHE_ENABLED", False)
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "https://heavyduty.uz",
+    "https://heavydutyuz.ru",
 ]
 CORS_ALLOW_ALL_ORIGINS = True
 
