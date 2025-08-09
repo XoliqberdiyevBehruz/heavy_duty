@@ -168,11 +168,8 @@ CACHEOPS_ENABLED = env.bool("CACHE_ENABLED", False)
 
 
 CORS_ALLOWED_ORIGINS = [
-    "http://read-only.example.com",
-    "https://read-and-write.example.com",
     "http://localhost:3000",
-    "https://heavy-duty-git-main-axrorxonov.vercel.app",
-    "https://heavy-duty-nu.vercel.app",
+    "https://heavyduty.uz",
 ]
 CORS_ALLOW_ALL_ORIGINS = True
 
